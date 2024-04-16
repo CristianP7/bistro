@@ -21,13 +21,148 @@
     --fontLogo: 'Ananda';
     --fontText: 'Manrope';
     --fontThrid:'Callingstone';
+    --fontHero:'Playfair Display';
     --mainColor: #333333;
     --secondaryColor:#f1f1f1;
     --hoverColor:#737474;
-    --backgroundColor:#fafafa;
+    --textSize:1rem;
+    --ctaSize:0.855rem;
+    --tittleSize:2.5rem;
+    --white:#ffff;
+}
+
+*{
+    /* outline: 1px solid red; */
 }
 
 .container{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
+
+body{
+    background-color: var(--secondaryColor);
+    font-family: var(--fontText);
+    font-size: 1rem;
+    color: var(--mainColor);
+}
+
+/* ==== HEADER SECTION ==== */
+
+.header{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: var(--tittleSize);
+    font-family: var(--fontLogo);
+    font-weight: 800;
+}
+
+.menu__container{
+    display: inline-block;
+    background-color: var(--mainColor);
+    padding: 12px 14px;
+}
+
+.menu__container:hover{
+    background-color: var(--hoverColor);
+}
+
+.menu{
+    color: #f1f1f1;
+    font-size: 1.25rem;
+}
+
+/* ==== HERO SECTION ==== */
+
+.hero{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero{
+    background-image: linear-gradient(180deg, #f1f1f1d0 , #ffffff56) ,url(/src/img/mobile\ hero-min.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__texts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.text{
+    margin: 0;
+    font-family: var(--fontText);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.tittle{
+    margin: 0;
+    font-size: 4rem;
+    font-family: var(--fontHero);
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.hero__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero__links{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.hero__links{
+    cursor: pointer;
+    background-color: var(--mainColor);
+    color: var(--white);
+}
+
+.hero__links{
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+    font-size: 0.855rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+}
+
+.hero__links--color{
+    background-color: var(--secondaryColor);
+    color: var(--mainColor);
+
+}
+
+.hero__links:hover{
+    background-color: var(--hoverColor);
+}
+
+.hero__links--color:hover{
+    background-color:var(--mainColor);
+    color: var(--secondaryColor);
+}
+
