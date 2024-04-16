@@ -25,5 +25,9 @@
     --secondaryColor:#f1f1f1;
     --hoverColor:#737474;
     --backgroundColor:#fafafa;
+}
 
+.container{
+    width: 90%;
+    margin: 0 auto;
 }
