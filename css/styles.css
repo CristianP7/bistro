@@ -1,0 +1,29 @@
+/* ==== FONTS ==== */
+
+@font-face{
+    font-family: Ananda;
+    src: url(/src/fonts/ananda_2/Ananda\ Black\ Personal\ Use.ttf);
+}
+
+@font-face{
+    font-family: AnandaBlack;
+    src: url(/src/fonts/ananda_2/Ananda\ Black\ Personal\ Use.ttf);
+}
+
+@font-face{
+    font-family: Callingstone;
+    src: url(/src/fonts/callingstone/Callingstone\ -\ Personal\ Use\ Only.ttf);
+}
+
+/* ==== ROOT ==== */
+
+:root{
+    --fontLogo: 'Ananda';
+    --fontText: 'Manrope';
+    --fontThrid:'Callingstone';
+    --mainColor: #333333;
+    --secondaryColor:#f1f1f1;
+    --hoverColor:#737474;
+    --backgroundColor:#fafafa;
+
+}
