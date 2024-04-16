@@ -47,3 +47,10 @@ Este repositorio contiene el código fuente  de nuestra página web, diseñada p
 
 
 ¡Gracias por visitar Restaurante Delicioso! Esperamos que disfrutes tu experiencia en nuestro sitio web y esperamos verte pronto en nuestro restaurante. ¡Buen provecho! 🍽️
+
+
+## Descargo de responsabilidad
+
+Este repositorio es únicamente para fines educativos y no para fines comerciales.
+
+
