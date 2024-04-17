@@ -22,8 +22,36 @@
         </div>
 
         <div class="menu__container">
-            <i class="fa-solid fa-bars menu"></i>
+            <i onclick=showSidebar()  class="fa-solid fa-bars menu"></i>
         </div>
+        
+        <nav class="header__nav">
+            <ul class="header__lists">
+                <li class="header__items"><a href="#home">Home</a></li>
+                <li class="header__items"><a href="#coffee">Menu</a></li>
+                <li class="header__items"><a href="#bakery">About</a></li>
+                <li class="header__items"><a href="#coldBrews">Services</a></li>
+                <li class="header__items"><a href="#shop">Gallery</a></li>
+                <li class="header__items"><a href="#login">News</a></li>
+                <li class="header__items"><a href="#login">Contact</a></li>
+                <li class="header__items"><a href="#login">Book Table</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar">
+            <ul class="header__sidebar">
+                <i onclick=hideSidebar()  class="header__items fa-solid fa-x"></i>
+                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#home">Home</a></li>
+                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#coffee">Menu</a></li>
+                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#bakery">About</a></li>
+                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#login">Services</a></li>
+                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#coldBrews">Gallery</a></li>
+                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#shop">News</a></li>
+                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#login">Contact</a></li>
+                <li onclick=hideSidebar() ><a class="header__items--sidebar header__items--sidebar--color" href="#login">Book Table</a></li>
+            </ul>
+        </div>
+        
     </header>
 
     <section class="hero">
@@ -41,6 +69,18 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'block';
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none';
+        }
+    </script>
     <script src="https://kit.fontawesome.com/2a76a9117a.js" crossorigin="anonymous"></script>
 </body>
 
