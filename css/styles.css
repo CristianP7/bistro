@@ -279,6 +279,8 @@ body{
         text-decoration: none;
         text-transform: uppercase;
         color: var(--hoverColor);
+        font-weight: 400;
+        letter-spacing: 0.105rem;
     }
     
     .header__item--color{
