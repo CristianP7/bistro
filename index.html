@@ -12,19 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header container">
+    <header class="header">
         <div class="logo__container">
             <span class="logo">Bistro</span>
         </div>
 
         <div class="menu__container">
-            <i onclick=showSidebar()  class="fa-solid fa-bars menu"></i>
+            <i onclick=showSidebar() class="fa-solid fa-bars menu"></i>
         </div>
-        
+
         <nav class="header__nav">
             <ul class="header__lists">
                 <li class="header__items"><a class="header__item" href="#home">Home</a></li>
@@ -40,18 +41,19 @@
 
         <div class="sidebar">
             <ul class="header__sidebar">
-                <i onclick=hideSidebar()  class="header__items fa-solid fa-x"></i>
-                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#home">Home</a></li>
-                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#coffee">Menu</a></li>
-                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#bakery">About</a></li>
-                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#login">Services</a></li>
-                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#coldBrews">Gallery</a></li>
-                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#shop">News</a></li>
-                <li onclick=hideSidebar() ><a class="header__items--sidebar" href="#login">Contact</a></li>
-                <li onclick=hideSidebar() ><a class="header__items--sidebar header__items--sidebar--color" href="#login">Book Table</a></li>
+                <i onclick=hideSidebar() class="header__items fa-solid fa-x"></i>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="#home">Home</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="#coffee">Menu</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="#bakery">About</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="#login">Services</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="#coldBrews">Gallery</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="#shop">News</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar" href="#login">Contact</a></li>
+                <li onclick=hideSidebar()><a class="header__items--sidebar header__items--sidebar--color"
+                        href="#login">Book Table</a></li>
             </ul>
         </div>
-        
+
     </header>
 
     <section class="hero">
@@ -60,7 +62,7 @@
                 <h1 class="text">Traditional Dishes</h1>
                 <h2 class="tittle">Tasty and Healthy</h2>
                 <p class="copy">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi
-                pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+                    pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
             </div>
 
             <div class="hero__buttons">
@@ -70,13 +72,46 @@
         </div>
     </section>
 
+    <section class="specialities">
+        <div class="container specialities--container ">
+            <div class="hero__texts">
+                <h3 class="text">Our Guests Eat Well</h3>
+                <h4 class="tittle tittle-specialities">Our Specialities</h4>
+                <p class="copy">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea
+                    sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+            </div>
+
+            <div class="specialites__picture--container">
+                <article class="specialities__article">
+                    <img class="specialities__img" src="/src/img/specialities1-min.jpg" alt="beef and meet">
+                </article>
+
+                <article class="specialities__article">
+                    <img class="specialities__img" src="/src/img/specialities2-min.png" alt="beef and meet">
+                </article>
+
+                <article class="specialities__article">
+                    <img class="specialities__img" src="/src/img/specialities3-min.jpg" alt="beef and meet">
+                </article>
+            </div>
+
+
+            <div class="copy__specialities--container">
+                <p class="copy copy--specialities">Gumbo beet <span class="span__underline">greens</span> corn soko endive gumbo gourd. Parsley shallot
+                    courgette tatsoi pea sprouts fava bean collard <span class="span__underline">greens</span> dandelion okra wakame tomato.</p>
+                <p class="copy copy--specialities copy--specialities--hidden">Lorem ipsum <span class="span__underline">dolor</span> sit amet consectetur adipisicing elit. Earum, cumque quod. Consequuntur, nam pariatur sed, vel rerum, voluptas placeat eaque quia adipisci quam dolorem <span class="span__underline">reprehenderit</span>veniam maiores quos sunt facere.</p>
+            </div>
+        </div>
+    </section>
+
+
     <script>
-        function showSidebar(){
+        function showSidebar() {
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'block';
         }
 
-        function hideSidebar(){
+        function hideSidebar() {
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none';
         }

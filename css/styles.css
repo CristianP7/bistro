@@ -23,7 +23,7 @@
     --fontThrid:'Callingstone';
     --fontHero:'Playfair Display';
     --mainColor: #333333;
-    --secondaryColor:#f1f1f1;
+    --secondaryColor:#f2f2f2;
     --hoverColor:#737474;
     --textSize:1rem;
     --ctaSize:0.855rem;
@@ -38,6 +38,7 @@
 .container{
     width: 80%;
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 body{
@@ -50,6 +51,8 @@ body{
 /* ==== HEADER SECTION START ==== */
 
 .header{
+    width: 90%;
+    margin: 0 auto;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -111,7 +114,7 @@ body{
 
 .fa-x{
     background-color: var(--mainColor);
-    color: white;
+    color: var(--white);
 }
 
 .header__items--sidebar{
@@ -235,6 +238,9 @@ body{
     color: var(--secondaryColor);
 }
 
+/* ==== HERO SECTION END ==== */
+
+
 
 /* ==== HEADER SECTION QUERIES START ==== */
 
@@ -318,3 +324,98 @@ body{
 }
 
 /* ==== HEADER - HERO SECTION QUERIES END ==== */
+
+
+/* ==== SPECIALITIES SECTION START ==== */
+
+.tittle-specialities{
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.specialites__picture--container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; 
+}
+
+.specialities__article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specialities__img{
+    cursor: pointer;
+    width: 100%;
+    max-width: 380px;
+    height: 600px;
+    object-fit: cover;
+    aspect-ratio: 2/3;
+    box-shadow: 0.0625rem 0.0625rem 0.625rem rgba(0, 0, 0, 0.329);
+    border-radius: 0.25rem;
+}
+
+.specialities__img:hover{
+    transition: .4s;
+    opacity: .8;
+}
+
+.copy__specialities--container{
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.copy--specialities{
+    margin:  0 0 1.35rem 0;
+}
+
+.span__underline{
+    text-decoration: underline;
+}
+
+.copy--specialities--hidden{
+    display: none;
+}
+
+
+/* ==== SPECIALITIES SECTION END ==== */
+
+/* ==== SPECIALITIES QUERIES SECTION START ==== */
+
+
+@media screen and (min-width:1024px){
+
+    .specialities__article{
+        display: grid;
+        justify-content: center;
+    }
+
+    .copy__specialities--container{
+        max-width: 720px;
+    }
+
+    .copy--specialities--hidden{
+        display: inline-block;
+    }
+    
+
+
+    .specialites__picture--container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+    }
+
+    .specialities__img{
+        width: 100%;
+        max-width: none;
+    }
+
+
+}
+
+/* ==== SPECIALITIES QUERIES SECTION END ==== */
