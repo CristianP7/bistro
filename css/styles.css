@@ -164,13 +164,14 @@ body{
     text-align: center;
     gap: 1.5rem;
     margin-bottom: 3rem;
+    color: var(--mainColor);
 }
 
 .text{
     margin: 0;
     font-family: var(--fontText);
-    font-size: 1.15rem;
-    font-weight: 700;
+    font-size: 1.05rem;
+    font-weight:500;
     letter-spacing: 0.1875rem;
     text-transform: uppercase;
 }
@@ -185,7 +186,7 @@ body{
 .copy{
     font-size: 1.2rem;
     line-height: 1.7;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .hero__buttons{
@@ -287,7 +288,13 @@ body{
         color: var(--secondaryColor);
         background-color: var(--mainColor);
         padding: 0.75rem 1.625rem;
-        font-weight: 800;
+    }
+
+    .header__item--color:hover{
+        transition: .4s;
+        background-color: var(--secondaryColor);
+        color: var(--mainColor);
+        outline: 1px solid #333333 ;
     }
 
     .hero__texts .copy{
