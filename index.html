@@ -14,6 +14,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Demo styles -->
+    <style>
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -73,7 +86,7 @@
     </section>
 
     <section class="specialities">
-        <div class="container specialities--container ">
+        <div class="container specialities--container">
             <div class="hero__texts">
                 <h3 class="text">Our Guests Eat Well</h3>
                 <h4 class="tittle tittle-specialities">Our Specialities</h4>
@@ -97,13 +110,105 @@
 
 
             <div class="copy__specialities--container">
-                <p class="copy copy--specialities">Gumbo beet <span class="span__underline">greens</span> corn soko endive gumbo gourd. Parsley shallot
-                    courgette tatsoi pea sprouts fava bean collard <span class="span__underline">greens</span> dandelion okra wakame tomato.</p>
-                <p class="copy copy--specialities copy--specialities--hidden">Lorem ipsum <span class="span__underline">dolor</span> sit amet consectetur adipisicing elit. Earum, cumque quod. Consequuntur, nam pariatur sed, vel rerum, voluptas placeat eaque quia adipisci quam dolorem <span class="span__underline">reprehenderit</span>veniam maiores quos sunt facere.</p>
+                <p class="copy copy--specialities">Gumbo beet <span class="span__underline">greens</span> corn soko
+                    endive gumbo gourd. Parsley shallot
+                    courgette tatsoi pea sprouts fava bean collard <span class="span__underline">greens</span> dandelion
+                    okra wakame tomato.</p>
+                <p class="copy copy--specialities copy--specialities--hidden">Lorem ipsum <span
+                        class="span__underline">dolor</span> sit amet consectetur adipisicing elit. Earum, cumque quod.
+                    Consequuntur, nam pariatur sed, vel rerum, voluptas placeat eaque quia adipisci quam dolorem <span
+                        class="span__underline">reprehenderit</span>veniam maiores quos sunt facere.</p>
             </div>
         </div>
     </section>
 
+    <section class="testimonials swiper mySwiper">
+        <div class="container testimonials--container swiper-wrapper">
+            <article class="testimonials__card swiper-slide">
+                <figure class="testimonials__picture">
+                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
+                        alt="Cristian Pereira">
+                </figure>
+                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
+                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
+                <h3 class="text testimonials__name">Cristian Pereira</h3>
+            </article>
+
+            <article class="testimonials__card swiper-slide">
+                <figure class="testimonials__picture">
+                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
+                        alt="Cristian Pereira">
+                </figure>
+                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
+                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
+                <h3 class="text testimonials__name">Cristian Pereira</h3>
+            </article>
+
+            <article class="testimonials__card swiper-slide">
+                <figure class="testimonials__picture">
+                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
+                        alt="Cristian Pereira">
+                </figure>
+                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
+                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
+                <h3 class="text testimonials__name">Cristian Pereira</h3>
+            </article>
+
+            <article class="testimonials__card swiper-slide">
+                <figure class="testimonials__picture">
+                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
+                        alt="Cristian Pereira">
+                </figure>
+                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
+                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
+                <h3 class="text testimonials__name">Cristian Pereira</h3>
+            </article>
+
+            <article class="testimonials__card swiper-slide">
+                <figure class="testimonials__picture">
+                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
+                        alt="Cristian Pereira">
+                </figure>
+                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
+                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
+                <h3 class="text testimonials__name">Cristian Pereira</h3>
+            </article>
+
+            <article class="testimonials__card swiper-slide">
+                <figure class="testimonials__picture">
+                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
+                        alt="Cristian Pereira">
+                </figure>
+                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
+                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
+                <h3 class="text testimonials__name">Cristian Pereira</h3>
+            </article>
+
+        </div>   
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    </section>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
 
     <script>
         function showSidebar() {
@@ -116,6 +221,7 @@
             sidebar.style.display = 'none';
         }
     </script>
+
     <script src="https://kit.fontawesome.com/2a76a9117a.js" crossorigin="anonymous"></script>
 </body>
 

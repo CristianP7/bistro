@@ -419,3 +419,54 @@ body{
 }
 
 /* ==== SPECIALITIES QUERIES SECTION END ==== */
+
+
+/* ==== TESTIMONIALS SECTION START ==== */
+
+.testimonials{
+    background-image: linear-gradient( #000000b9, #000000b7), url(/src/img/mobile\ hero-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.testimonials__card{
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimoials__avatar{
+    width: 130px;
+    border-radius: 50%;
+}
+
+.testimonials__copy{
+    width: 250px;
+    margin: 1.5625rem auto;
+    text-align: center;
+}
+
+/* ==== TESTIMONIALS SECTION END ==== */
+
+
+/* ==== TESTIMONIALS QUERIES SECTION START ==== */
+
+@media screen and (min-width:600px){
+    .testimonials__copy{
+        width: 480px;
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    .testimonials__copy{
+        width: 600px;
+    }
+
+
+}
+
+/* ==== TESTIMONIALS QUERIES SECTION END ==== */
