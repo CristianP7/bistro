@@ -14,22 +14,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-    <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Demo styles -->
-    <style>
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
 </head>
 
 <body>
+    <style>
+        :root{
+            --swiper-theme-color: rgb(255, 255, 255);
+
+        }
+    </style>
+
     <header class="header">
         <div class="logo__container">
             <span class="logo">Bistro</span>
@@ -122,93 +117,64 @@
         </div>
     </section>
 
-    <section class="testimonials swiper mySwiper">
-        <div class="container testimonials--container swiper-wrapper">
-            <article class="testimonials__card swiper-slide">
-                <figure class="testimonials__picture">
-                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
-                        alt="Cristian Pereira">
-                </figure>
-                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
-                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
-                <h3 class="text testimonials__name">Cristian Pereira</h3>
-            </article>
+    <section class="testimonials">
+        <div class="container testimonials--container">
 
-            <article class="testimonials__card swiper-slide">
-                <figure class="testimonials__picture">
-                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
-                        alt="Cristian Pereira">
-                </figure>
-                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
-                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
-                <h3 class="text testimonials__name">Cristian Pereira</h3>
-            </article>
+            <!-- Slider main container -->
+            <div class="swiper testimonials__swiper">
 
-            <article class="testimonials__card swiper-slide">
-                <figure class="testimonials__picture">
-                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
-                        alt="Cristian Pereira">
-                </figure>
-                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
-                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
-                <h3 class="text testimonials__name">Cristian Pereira</h3>
-            </article>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
 
-            <article class="testimonials__card swiper-slide">
-                <figure class="testimonials__picture">
-                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
-                        alt="Cristian Pereira">
-                </figure>
-                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
-                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
-                <h3 class="text testimonials__name">Cristian Pereira</h3>
-            </article>
+                    <div class="swiper-slide testimonials__slide">
+                        <figure class="testimonials__picture">
+                            <img class="testimonials__img" src="https://avatars.githubusercontent.com/u/77496600?v=4"
+                                alt="">
+                        </figure>
 
-            <article class="testimonials__card swiper-slide">
-                <figure class="testimonials__picture">
-                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
-                        alt="Cristian Pereira">
-                </figure>
-                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
-                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
-                <h3 class="text testimonials__name">Cristian Pereira</h3>
-            </article>
+                        <div class="testimonials__text">
+                            <p class="testimonials__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                                eius natus omnis amet velit fugit perspiciatis nihil aperiam, nesciunt quia.</p>
 
-            <article class="testimonials__card swiper-slide">
-                <figure class="testimonials__picture">
-                    <img class="testimoials__avatar" src="https://avatars.githubusercontent.com/u/77496600?v=4"
-                        alt="Cristian Pereira">
-                </figure>
-                <p class="copy testimonials__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id
-                    ullam error dolorem animi, ratione nostrum et a quia possimus. Lorem Ipsun Dolor sit amed consectetur</p>
-                <h3 class="text testimonials__name">Cristian Pereira</h3>
-            </article>
+                            <p class="testimonials__name">Cristian Pereira</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonials__slide">
+                        <figure class="testimonials__picture">
+                            <img class="testimonials__img" src="https://avatars.githubusercontent.com/u/77496600?v=4"
+                                alt="">
+                        </figure>
 
-        </div>   
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+                        <div class="testimonials__text">
+                            <p class="testimonials__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                                eius natus omnis amet velit fugit perspiciatis nihil aperiam, nesciunt quia.</p>
+
+                            <p class="testimonials__name">Cristian Pereira</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonials__slide">
+                        <figure class="testimonials__picture">
+                            <img class="testimonials__img" src="https://avatars.githubusercontent.com/u/77496600?v=4"
+                                alt="">
+                        </figure>
+
+                        <div class="testimonials__text">
+                            <p class="testimonials__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                                eius natus omnis amet velit fugit perspiciatis nihil aperiam, nesciunt quia.</p>
+
+                            <p class="testimonials__name">Cristian Pereira</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
     </section>
 
-
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            cssMode: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            mousewheel: true,
-            keyboard: true,
-        });
-    </script>
 
     <script>
         function showSidebar() {
@@ -223,6 +189,11 @@
     </script>
 
     <script src="https://kit.fontawesome.com/2a76a9117a.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/testimonials.js"></script>
+
 </body>
 
 </html>
