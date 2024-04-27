@@ -497,9 +497,101 @@ body{
     }
 }
 
-/* ==== TESTIMONIALS QUERIES SECTION START ==== */
+/* ==== DISHES SECTION START ==== */
+
+.container--dishes{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.dish__card{
+    width: 300px;
+    margin: 0 auto;
+    border-bottom: 1px solid #3333331c;
+}
+
+.dish__img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.dish__text{
+    max-width: 400px;
+}
+
+.dish__message{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dish__name{
+    font-size: 2.34rem;
+    font-family: var(--fontHero);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.dish__copy{
+    font-size: 1.15rem;
+    font-weight: 200;
+    line-height: 1.5;
+    color: var(--mainColor);
+}
+
+.dish__cta{
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    color: var(--mainColor);
+    text-decoration: none;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dish__cta:hover{
+    transition: .4s;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+}
+
+
+
+/* ==== DISHES SECTION END ==== */
+
+/* ==== DISHES SECTION QUERIES START ==== */
+
+
+@media screen and (min-width:700px){
+    .dish__card{
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .dish__card--order{
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .dish__img{
+        width: 450px;
+        height: 450px;
+    }
+}
+
+/* ==== DISHES SECTION QUERIES SECTION END ==== */
 
 
 
 
-/* ==== TESTIMONIALS QUERIES SECTION END ==== */
+
