@@ -507,6 +507,8 @@ body{
 
 .dish__card{
     width: 300px;
+    max-width: 1000px;
+    gap: 2rem;
     margin: 0 auto;
     border-bottom: 1px solid #3333331c;
 }
@@ -583,6 +585,9 @@ body{
 }
 
 @media screen and (min-width:1200px){
+
+
+
     .dish__img{
         width: 450px;
         height: 450px;
