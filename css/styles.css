@@ -554,6 +554,7 @@ body{
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 2px;
+    outline: 1px solid #3333334f;
 }
 
 .dish__cta:hover{
