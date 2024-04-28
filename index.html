@@ -229,6 +229,26 @@
         </div>
     </section>
 
+    <section class="gallery">
+        <h3 class="tittle gallery__tittle">Our Gallery</h3>
+        <div class="container container--gallery">
+            <div class="gallery__slide">
+                <img class="gallery__img" src="/src/img/carousel1-min.jpeg" alt="">
+                <img class="gallery__img" src="/src/img/carousel2-min.jpg" alt="">
+                <img class="gallery__img" src="/src/img/carousel4-min.jpg" alt="">
+                <img class="gallery__img" src="/src/img/carousel5-min.jpg" alt="">
+                <img class="gallery__img" src="/src/img/carousel6-min.jpg" alt="">
+                <img class="gallery__img" src="/src/img/carousel1-min.jpeg" alt="">
+                <img class="gallery__img" src="/src/img/carousel2-min.jpg" alt="">
+                <img class="gallery__img" src="/src/img/carousel4-min.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var copy = document.querySelector(".gallery__slide").cloneNode(true);
+        document.querySelector('.container--gallery').appendChild(copy);
+    </script>
 
     <script>
         function showSidebar() {

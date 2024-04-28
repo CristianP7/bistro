@@ -579,6 +579,10 @@ body{
         gap: 2rem;
         align-items: center;
     }
+    
+    ..dish__text{
+        max-width: 500px;
+    }
 
     .dish__card--order{
         flex-direction: row-reverse;
@@ -597,7 +601,107 @@ body{
 
 /* ==== DISHES SECTION QUERIES SECTION END ==== */
 
+/* ==== GALLERY SECTION START ==== */
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.gallery{
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.gallery__tittle{
+    font-size: 3.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 111;
+}
+
+.gallery__slide{
+    display: inline-block;
+    animation: 40s slide infinite linear;
+}
+
+.gallery::before, .gallery::after{
+    position: absolute;
+    width: 50px;
+    top: 0;
+    height: 100%;
+    content: "";
+    z-index: 11;
+}
+
+.gallery::before{
+    left: 0;
+    background:linear-gradient(to left, rgba(255,255,255,0)   , var(--secondaryColor) );
+}
+
+.gallery::after{
+    right: 0;
+    background:linear-gradient(to right, rgba(255,255,255,0) , var(--secondaryColor) );
+}
+
+.gallery__slide:hover{
+    animation-play-state: paused;
+}
+
+.gallery__img{
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.178);
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 20px;
+}
 
 
+/* ==== GALLERY SECTION END ==== */
 
+
+/* ==== GALLERY SECTION QUERIES START ==== */
+
+@media screen and (min-width:700px){
+
+    
+.gallery::before, .gallery::after{
+    position: absolute;
+    width: 150px;
+    top: 0;
+    height: 100%;
+}
+
+.gallery__img{
+    width: 400px;
+    height: 400px;
+    margin: 0 15px;
+}
+
+@media screen and (min-width:1400px){
+
+    
+    .gallery::before, .gallery::after{
+        position: absolute;
+        width: 250px;
+        height: 100%;
+    }
+    
+    .gallery__img{
+        width: 450px;
+        height: 500px;
+        margin: 0 8px;
+    }
+    
+    }
+
+}
+
+/* ==== GALLERY SECTION QUERIES END ==== */
 
