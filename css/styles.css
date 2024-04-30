@@ -714,13 +714,16 @@ body{
 
 /* ==== MENU SECTION START ==== */
 
+.container--menu{
+    padding: 0;
+}
+
 .menu__texts{
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     max-width: 500px;
     color: var(--mainColor);
-
 }
 
 .menu__tittle{
