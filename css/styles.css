@@ -736,13 +736,27 @@ body{
 }
 
 .menu__card{
-    max-width: 450px;
     margin: 4rem auto 0 auto;
     display: grid;
     grid-template-columns: 100px 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     gap: 1rem;
+}
+
+.menu__card{
+    max-width: 450px;
+    background-color: #f2f2f2;
+    border-radius: 0.75rem;
+    padding: 0.75rem 0.5rem;
+    box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.089);
+    cursor: pointer;
+}
+
+.menu__card:hover{
+    transition: .8s;
+    box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.429);
+
 }
 
 .menu__img{
@@ -785,11 +799,21 @@ body{
     display: none;
 }
 
+.menu__buttons{
+    margin-top: 2.5rem;
+}
+
 
 /* ==== MENU SECTION END ==== */
 
 
 /* ==== MENU SECTION QUERIES START ==== */
+
+@media screen and (min-width:600px){
+    .menu__card{
+        padding: 16px;
+    }
+}
 
 
 @media screen and (min-width:1024px){
@@ -797,12 +821,11 @@ body{
         background-color: rgba(255, 255, 255, 0.103);
         display: flex;
         justify-content: center;
-        gap: 6rem;
+        gap: 3rem;
     }
 
     .menu__card{
         margin: 45px 0;
-        padding: 10px;
         gap: 1.5rem;
     }
 
@@ -819,7 +842,7 @@ body{
 @media screen and (min-width:1400px){
     .menu__card--container{
 
-        gap: 10rem;
+        gap: 3.5rem;
     }
 
 
