@@ -642,7 +642,7 @@ body{
 
 .gallery__slide{
     display: inline-block;
-    animation: 60s slide infinite linear;
+    animation: 120s slide infinite linear;
 }
 
 .gallery::before, .gallery::after{
