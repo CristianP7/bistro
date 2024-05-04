@@ -642,7 +642,7 @@ body{
 
 .gallery__slide{
     display: inline-block;
-    animation: 140s slide infinite linear;
+    animation: 60s slide infinite linear;
 }
 
 .gallery::before, .gallery::after{
@@ -662,10 +662,6 @@ body{
 .gallery::after{
     right: 0;
     background:linear-gradient(to right, rgba(255,255,255,0) , var(--secondaryColor) );
-}
-
-.gallery__slide:hover{
-    animation-play-state: paused;
 }
 
 .gallery__img{
