@@ -1,0 +1,42 @@
+.tittle{
+    font-size: 3rem;
+}
+
+.hero{
+    background-image: linear-gradient(180deg, #201f1f9c , #141414d5) ,url(/src/img/menuHero.jpg);
+}
+
+.hero__texts{
+    color: var(--secondaryColor);
+}
+
+.menu--menu{
+    padding: 30px 0 0 0;
+}
+
+.reservation{
+    display: flex;
+    margin-top: -4rem;
+    background-image: var(--secondaryColor);
+}
+
+.container--reservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.reservation__texts{
+    color: var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem 0;
+    text-align: center;
+    max-width: 600px;
+}
+
+@media screen and (min-width:1024px){
+    .reservation{
+        height: 500px;
+    }
+}

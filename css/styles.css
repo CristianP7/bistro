@@ -34,6 +34,7 @@
 }
 
 *{
+    scroll-behavior: smooth;
     /* outline: 1px solid red;
     color: #333333; */
 }

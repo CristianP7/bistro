@@ -7,6 +7,7 @@
     <title>Bistro Restaurant</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -18,12 +19,6 @@
 </head>
 
 <body>
-    <style>
-        :root {
-            --swiper-theme-color: rgb(255, 255, 255);
-        }
-    </style>
-    
     <header class="header">
         <div class="logo__container">
             <span class="logo">Bistro</span>
@@ -35,7 +30,7 @@
 
         <nav class="header__nav">
             <ul class="header__lists">
-                <li class="header__items"><a class="header__item" href="/index.html">Home</a></li>
+                <li class="header__items"><a class="header__item" href="index.html">Home</a></li>
                 <li class="header__items"><a class="header__item" href="/menu.html">Menu</a></li>
                 <li class="header__items"><a class="header__item" href="#bakery">About</a></li>
                 <li class="header__items"><a class="header__item" href="#coldBrews">Services</a></li>
@@ -62,193 +57,125 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero hero--menu">
         <div class="container">
             <div class="hero__texts">
-                <h1 class="text">Traditional Dishes</h1>
-                <h2 class="tittle">Tasty and Healthy</h2>
+                <h1 class="text">Tasty and Healthy</h1>
+                <h2 class="tittle">Our Menu</h2>
                 <p class="copy">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi
                     pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
             </div>
 
             <div class="hero__buttons">
-                <a href="#" class="hero__links hero__links--color">Our Menu</a>
-                <a href="#" class="hero__links">Gallery</a>
+                <a href="#menu" class="hero__links hero__links--color">View our menu</a>
             </div>
         </div>
     </section>
 
-    <section class="specialities">
-        <div class="container specialities--container">
-            <div class="hero__texts">
-                <h3 class="text">Our Guests Eat Well</h3>
-                <h4 class="tittle tittle-specialities">Our Specialities</h4>
-                <p class="copy">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea
-                    sprouts fava bean collard greens dandelion okra wakame tomato.</p>
-            </div>
-
-            <div class="specialites__picture--container">
-                <article class="specialities__article">
-                    <img class="specialities__img" src="/src/img/specialities1-min.jpg" alt="beef and meet">
-                </article>
-
-                <article class="specialities__article">
-                    <img class="specialities__img" src="/src/img/specialities2-min.png" alt="beef and meet">
-                </article>
-
-                <article class="specialities__article">
-                    <img class="specialities__img" src="/src/img/specialities3-min.jpg" alt="beef and meet">
-                </article>
-            </div>
-
-
-            <div class="copy__specialities--container">
-                <p class="copy copy--specialities">Gumbo beet <span class="span__underline">greens</span> corn soko
-                    endive gumbo gourd. Parsley shallot
-                    courgette tatsoi pea sprouts fava bean collard <span class="span__underline">greens</span> dandelion
-                    okra wakame tomato.</p>
-                <p class="copy copy--specialities copy--specialities--hidden">Lorem ipsum <span
-                        class="span__underline">dolor</span> sit amet consectetur adipisicing elit. Earum, cumque quod.
-                    Consequuntur, nam pariatur sed, vel rerum, voluptas placeat eaque quia adipisci quam dolorem <span
-                        class="span__underline">reprehenderit</span>veniam maiores quos sunt facere.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="container testimonials--container">
-
-            <!-- Slider main container -->
-            <div class="swiper testimonials__swiper">
-
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-
-                    <div class="swiper-slide testimonials__slide">
-                        <figure class="testimonials__picture">
-                            <img class="testimonials__img" src="https://avatars.githubusercontent.com/u/77496600?v=4"
-                                alt="">
-                        </figure>
-
-                        <div class="testimonials__text">
-                            <p class="testimonials__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                                eius natus omnis amet velit fugit perspiciatis nihil aperiam, nesciunt quia.</p>
-
-                            <p class="testimonials__name">Cristian Pereira</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide testimonials__slide">
-                        <figure class="testimonials__picture">
-                            <img class="testimonials__img" src="https://avatars.githubusercontent.com/u/77496600?v=4"
-                                alt="">
-                        </figure>
-
-                        <div class="testimonials__text">
-                            <p class="testimonials__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                                eius natus omnis amet velit fugit perspiciatis nihil aperiam, nesciunt quia.</p>
-
-                            <p class="testimonials__name">Cristian Pereira</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide testimonials__slide">
-                        <figure class="testimonials__picture">
-                            <img class="testimonials__img" src="https://avatars.githubusercontent.com/u/77496600?v=4"
-                                alt="">
-                        </figure>
-
-                        <div class="testimonials__text">
-                            <p class="testimonials__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                                eius natus omnis amet velit fugit perspiciatis nihil aperiam, nesciunt quia.</p>
-
-                            <p class="testimonials__name">Cristian Pereira</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="dishes">
-        <div class="container container--dishes">
-            <div class="dish__card">
-                <figure class="dish__picture">
-                    <!-- Convertir a PNG para quitar fondo -->
-                    <img class="dish__img" src="/src/img/dishes1-min-removebg-preview.png" alt="">
-                </figure>
-
-                <div class="dish__text">
-                    <p class="dish__message">Sweet Pleasure</p>
-                    <h4 class="dish__name">Sea Heaven Pasta</h4>
-                    <p class="dish__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, esse suscipit
-                        corrupti illum sint voluptas? Tenetur impedit esse neque, repudiandae numquam aliquid, minus
-                        provident velit aliquam deserunt aspernatur perferendis dolor.</p>
-                    <a class="dish__cta" href="#">View our menu</a>
-                </div>
-            </div>
-
-            <div class="dish__card dish__card--order">
-                <figure class="dish__picture">
-                    <!-- Convertir a PNG para quitar fondo -->
-                    <img class="dish__img" src="/src/img/dishes2-min-removebg-preview.png" alt="">
-                </figure>
-
-                <div class="dish__text">
-                    <p class="dish__message">Sweet Pleasure</p>
-                    <h4 class="dish__name">Cosa Rara que no se sabe</h4>
-                    <p class="dish__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, esse suscipit
-                        corrupti illum sint voluptas? Tenetur impedit esse neque, repudiandae numquam aliquid, minus
-                        provident velit aliquam deserunt aspernatur perferendis dolor.</p>
-                    <a class="dish__cta" href="#">View our menu</a>
-                </div>
-            </div>
-
-            <div class="dish__card">
-                <figure class="dish__picture">
-                    <!-- Convertir a PNG para quitar fondo -->
-                    <img class="dish__img" src="/src/img/dishes1-min-removebg-preview.png" alt="">
-                </figure>
-
-                <div class="dish__text">
-                    <p class="dish__message">Sweet Pleasure</p>
-                    <h4 class="dish__name">Cosa Rara que no se sabe 2</h4>
-                    <p class="dish__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, esse suscipit
-                        corrupti illum sint voluptas? Tenetur impedit esse neque, repudiandae numquam aliquid, minus
-                        provident velit aliquam deserunt aspernatur perferendis dolor.</p>
-                    <a class="dish__cta" href="#">View our menu</a>
-                </div>
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-    <section class="gallery">
-        <p class="text gallery__text">OUR EXPENSIVE GALLERY</p>
-        <h3 class="tittle gallery__tittle">Our Gallery</h3>
-        <div class="container container--gallery">
-            <div class="gallery__slide">
-                <img class="gallery__img" src="/src/img/carousel1-min.jpeg" alt="">
-                <img class="gallery__img" src="/src/img/carousel2-min.jpg" alt="">
-                <img class="gallery__img" src="/src/img/carousel4-min.jpg" alt="">
-                <img class="gallery__img" src="/src/img/carousel5-min.jpg" alt="">
-                <img class="gallery__img" src="/src/img/carousel6-min.jpg" alt="">
-                <img class="gallery__img" src="/src/img/carousel1-min.jpeg" alt="">
-                <img class="gallery__img" src="/src/img/carousel2-min.jpg" alt="">
-                <img class="gallery__img" src="/src/img/carousel4-min.jpg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="menu">
+    <section id="menu" class="menu menu--menu starters">
         <div class="container container--menu">
             <div class="menu__texts">
                 <p class="menu__text text">Special Selection</p>
-                <h2 class="menu__tittle tittle">From Our Menu</h2>
+                <h2 class="menu__tittle tittle">Our Starters</h2>
+                <p class=" copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officiis
+                    nobis cumque fugit quod possimus optio doloribus, perferendis mollitia itaque!</p>
+            </div>
+
+            <div class="menu__card--container">
+                <div class="menu__left">
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup</span>
+                            <span class="menu__price">$32.500</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup Zero</span>
+                            <span class="menu__price">$49.999</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup Tradition</span>
+                            <span class="menu__price">$99.999</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="menu__right">
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup</span>
+                            <span class="menu__price">$32.500</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup Zero</span>
+                            <span class="menu__price">$49.999</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup Tradition</span>
+                            <span class="menu__price">$99.999</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="testimonials">       
+    </section> -->
+
+    <section class="menu menu--menu mainMeals">
+        <div class="container container--menu">
+            <div class="menu__texts">
+                <p class="menu__text text">Special Selection</p>
+                <h2 class="menu__tittle tittle">Main Meals</h2>
                 <p class=" copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officiis
                     nobis cumque fugit quod possimus optio doloribus, perferendis mollitia itaque!</p>
             </div>
@@ -294,7 +221,7 @@
                         </div>
                     </article>
 
-                    <article class="menu__card menu__card--hidden">
+                    <article class="menu__card">
                         <figure class="menu__picture">
                             <img src="/src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
                         </figure>
@@ -307,7 +234,7 @@
                         </div>
                     </article>
 
-                    <article class="menu__card menu__card--hidden">
+                    <article class="menu__card">
                         <figure class="menu__picture">
                             <img src="/src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
                         </figure>
@@ -320,7 +247,6 @@
                         </div>
                     </article>
                 </div>
-
 
                 <div class="menu__right">
                     <article class="menu__card">
@@ -362,7 +288,7 @@
                         </div>
                     </article>
 
-                    <article class="menu__card menu__card--hidden">
+                    <article class="menu__card">
                         <figure class="menu__picture">
                             <img src="/src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
                         </figure>
@@ -375,7 +301,7 @@
                         </div>
                     </article>
 
-                    <article class="menu__card menu__card--hidden">
+                    <article class="menu__card">
                         <figure class="menu__picture">
                             <img src="/src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
                         </figure>
@@ -389,10 +315,113 @@
                     </article>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="menu__buttons hero__buttons">
-                <a href="#" class="menu__links hero__links hero__links--color">View Full Menu</a>
-                <a href="#" class="menu__links hero__links">Book Table</a>
+    <section class="menu menu--menu deserts">
+        <div class="container container--menu">
+            <div class="menu__texts">
+                <p class="menu__text text">Special Selection</p>
+                <h2 class="menu__tittle tittle">Our Deserts</h2>
+                <p class=" copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officiis
+                    nobis cumque fugit quod possimus optio doloribus, perferendis mollitia itaque!</p>
+            </div>
+
+            <div class="menu__card--container">
+                <div class="menu__left">
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup</span>
+                            <span class="menu__price">$32.500</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup Zero</span>
+                            <span class="menu__price">$49.999</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup Tradition</span>
+                            <span class="menu__price">$99.999</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="menu__right">
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup</span>
+                            <span class="menu__price">$32.500</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes1-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup Zero</span>
+                            <span class="menu__price">$49.999</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="menu__card">
+                        <figure class="menu__picture">
+                            <img src="/src/img/dishes2-min-removebg-preview.png" alt="" class="menu__img">
+                        </figure>
+
+                        <div class="menu__description">
+                            <span class="menu__name">Mussels Soup Tradition</span>
+                            <span class="menu__price">$99.999</span>
+                            <p class="menu__copy menu__copy--dish">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation">
+        <div class="container container--reservation">
+            <div class="reservation__texts">
+                <span class="text">Tesimonials</span>
+                <h3 class="tittle">Make a Reservation</h3>
+                <p class="copy">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea
+                    sprouts fava bean collard greens dandelion okra wakame tomato</p>
+                <a href="#" class="menu__links hero__links">reservate now</a>
             </div>
         </div>
     </section>
@@ -401,7 +430,9 @@
         <div class="container container--footer">
             <div class="footer__links">
                 <ul class="footer__list">
-                    <li><p class="footer__links footer__link--size">Quick Links</p></li>
+                    <li>
+                        <p class="footer__links footer__link--size">Quick Links</p>
+                    </li>
                     <li><a class="footer__link" href="#">Our menu</a></li>
                     <li><a class="footer__link" href="#">About us</a></li>
                     <li><a class="footer__link" href="#">Meet Our Chief</a></li>
@@ -441,24 +472,16 @@
 
             </div>
 
-            <p class="footer__rights">Bistro &copy; 2024. Developed by <a class="footer__dev" target="_blank" href="https://github.com/CristianP7">Cristian Pereira</a></p>
+            <p class="footer__rights">Bistro &copy; 2024. Developed by <a class="footer__dev" target="_blank"
+                    href="https://github.com/CristianP7">Cristian Pereira</a></p>
         </div>
     </footer>
 
-    <!-- SCRIPTS -->
-
-    <script src="/js/menu.js" >
+    <script src="/js/menu.js">
     </script>
-
-    <script src="/js/gallery.js">
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script src="/js/testimonials.js"></script>
 
     <script src="https://kit.fontawesome.com/2a76a9117a.js" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
+
 </html>
