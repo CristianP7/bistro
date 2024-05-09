@@ -154,7 +154,6 @@ body{
 /* ==== HERO SECTION START ==== */
 
 .hero{
-    height: 85vh;
     display: flex;
     align-items: center;
 }
