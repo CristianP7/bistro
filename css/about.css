@@ -27,12 +27,16 @@
 
 /* BLOG SECTION STARD */
 
+
+
 .blog__card{
     width: 335px;
     max-width: 400px;
-    height: 490px;
+    height: auto;
+    padding-bottom: 1rem;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.16);
 }
+
 
 .blog__card:hover{
     transition: .5s;
