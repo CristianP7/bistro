@@ -1,0 +1,107 @@
+.hero{
+    background-image: linear-gradient(#000000b9, #000000a1),  url(/src/img/review-min.jpeg);
+    background-position: center;
+    height: 70vh;
+}
+
+.hero__texts{
+    color: var(--secondaryColor);
+}
+
+.services__texts{
+    color: var(--mainColor);
+}
+
+/* CATEGORY  SECTION START */
+
+.category__card{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.categories__container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem 3rem; 
+    max-width: 1000px;
+    margin: 4rem auto 0;
+    }
+
+.category__card--container{
+    display: grid;
+    gap: 1.5rem 0;
+    place-items: center;
+    text-align: center;
+}
+
+.category__img{
+    width: 105px;
+    aspect-ratio: 4/4;
+}
+
+/* CATEGORY  SECTION END */
+
+
+/* DELIVERY  SECTION START */
+
+.container--delivery{
+    padding: 0 0 4rem 0;
+    max-width: 500px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+
+.delivery__img{
+    width: 180px;
+}
+
+.tittle--dish{
+    font-size: 3.5rem;
+}
+
+/* DELIVERY  SECTION END */
+
+
+/* BOOKTABLE  SECTION STARS */
+
+.hero--booktable{
+    height: 700px;
+    background-image: linear-gradient(#000000b9, #000000a1),  url(/src/img/carousel2-min.jpg);
+    background-position:top;
+}
+
+.booktable--texts{
+    display: grid;
+    place-items: center;
+}
+
+.tittle--booktable{
+    font-size: 2.5rem;
+}
+
+/* BOOKTABLE  SECTION END */
+
+
+/* BOOKTABLE QUERIES SECTION START */
+
+@media screen and (min-width:700px){
+    .hero--booktable{
+        height: 50vh;
+    }
+    
+}
+
+/* BOOKTABLE  SECTION START */
+
+.menu--section{
+    margin-top: 5rem;
+}
+
+.menu__buttons{
+    padding: 0rem 0 rem ;
+}
+
+/* BOOKTABLE  SECTION END */
