@@ -29,11 +29,11 @@
 
 
 .blog__card{
-    width: 335px;
+    width: 300px;
     max-width: 400px;
     height: auto;
     padding-bottom: 1rem;
-    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.308);
 }
 
 
@@ -143,8 +143,7 @@
 }
 
 .tittle--chief{
-    font-size: 3.5rem;
-    margin: 2rem 0 ;
+    margin: 1rem 0 2rem 0;
 }
 
 .chief__picture{
@@ -157,10 +156,10 @@
 }
 
 
-/* BLOG SECTION CHIEF END*/
+/*  CHIEF SECTION END*/
 
 
-/* BLOG SECTION CHIEF QUERIES START*/
+/*  CHIEF SECTION QUERIES START*/
 
 @media screen and (min-width:500px){
     .chief__picture{
@@ -183,11 +182,63 @@
     
 }
 
- @media screen and (min-width:1440px){
+@media screen and (min-width:1400px){
     .container--chief{
         gap: 7rem;
+        padding: 0 0 4rem;
     }
- }
+
+    .chief__picture{
+        width: 380px;
+        margin-top: 0rem;
+    }
+
+}
 
 
-/* BLOG SECTION CHIEF QUERIES END*/
+/* CHIEF SECTION QUERIES END*/
+
+/* DISHES SECTION  START*/
+
+.dishes{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container--specialities{
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.dishes__img{
+    width: 132px;
+}
+
+.tittle--chief{
+    font-size: 2.5rem;
+}
+
+.dishes__texts{
+    display: grid;
+    place-items: center;
+    margin-bottom: 4rem;
+}
+
+.dishes--copy{
+    padding: 0 1.5em;
+    margin: 2rem 0;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* BLOG SECTION DISHES END*/
+
+
+
+/* BLOG SECTION DISHES START*/
+
+/* BLOG SECTION DISHES END*/
+
+
+
