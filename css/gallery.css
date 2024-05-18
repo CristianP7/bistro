@@ -1,0 +1,153 @@
+.hero--menu{
+    height: 75vh;
+    background-image: linear-gradient(#0000005b , #000000a6 ), url(/src/img/gallery\ hero.jpg);
+}
+
+.hero__texts{
+    color: var(--secondaryColor);
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px , 1fr));
+    grid-auto-rows: minmax(300px, auto);
+    gap: 2rem;
+    grid-auto-flow: dense;
+    
+}
+
+.container{
+    padding: 8rem 0;
+}
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.grid-item{
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.247);
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item{
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:hover{
+    transform: scale(.9);
+}
+
+.grid-item:nth-child(1) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/carousel1-min.jpeg);
+}
+
+.grid-item:nth-child(2) {
+    background-image: linear-gradient(#0000005b , #0000004f ),url(/src/img/carousel4-min.jpg) ;
+}
+
+.grid-item:nth-child(3) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/carousel5-min.jpg) ;
+}
+
+.grid-item:nth-child(4) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/menuHero.jpg) ;
+}
+
+.grid-item:nth-child(5) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/carousel6-min.jpg) ;
+}
+
+.grid-item:nth-child(6) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/carousel2-min.jpg) ;
+    background-position: bottom;
+}
+
+.grid-item:nth-child(7) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/specialities1-min.jpg) ;
+
+}
+
+.grid-item:nth-child(8) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/specialities2-min.png) ;
+
+}
+
+.grid-item:nth-child(9) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/specialities3-min.jpg);
+}
+
+.grid-item:nth-child(10) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/about\ hero.jpg);
+}
+
+.grid-item:nth-child(11) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/review-min.jpeg);
+}
+
+.grid-item:nth-child(12) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/menu\ \(4\)-min.jpg);
+}
+
+.grid-item:nth-child(13) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/carousel5-min.jpg);
+}
+
+.grid-item:nth-child(14) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/specialities3-min.jpg);
+}
+
+.grid-item:nth-child(15) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/services\ hero.jpg);
+
+}
+
+.grid-item:nth-child(16) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/blog__card.jpg);
+
+}
+
+.grid-item:nth-child(17) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/carousel1-min.jpeg);
+
+}
+
+.grid-item:nth-child(18) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/menuHero.jpg);
+
+}
+
+.grid-item:nth-child(19) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/services\ hero.jpg);
+
+}
+
+.grid-item:nth-child(20) {
+    background-image:linear-gradient(#0000005b , #0000004f ), url(/src/img/menu\ \(5\)-min.jpg);
+    background-position: calc(-30px);
+
+}
+
+.menu--container{
+    margin-top: -70px;
+    padding: 0 0 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:600px){
+    .wide{
+        grid-column: span 2;
+    }
+    
+    .tall{
+        grid-row: span 2;
+    }
+
+}
