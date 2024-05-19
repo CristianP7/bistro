@@ -1,0 +1,101 @@
+.hero{
+    background-image: linear-gradient(#000000a4, #00000077),  url(/src/img/contact\ hero.jpg);
+    height: 65vh;
+}
+
+.hero__texts{
+    color: var(--secondaryColor);
+
+}
+
+.contact__texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+.text--contact{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.form__container{
+    display: grid;
+    gap: 1rem 0;
+    max-width: 560px;
+    margin: 3rem auto;
+
+
+}
+
+.form__between{
+    display: flex;
+    gap: 1rem;
+}
+
+input{
+    font-family: inherit;
+    width: 100%;
+    padding: .5rem 1rem;
+    letter-spacing: .5px;
+    font-size: 1.15rem;
+    border: none;
+    outline: 1px solid #000000a2;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 1.25rem 1rem;
+    letter-spacing: .5px;
+    font-family: inherit;
+    font-size: 1.15rem;
+    border: none;
+    outline: 1px solid #000000a2;
+}
+
+.form__btn{
+    padding: 1rem 0;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor) ;
+}
+
+.items__contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+.item__card{
+    width: 300px;    
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.fa-card{
+    font-size: 2.225rem;
+}
+
+.text__card{
+    font-weight: 800;
+}
+
+.copy__card{
+    font-size: 1.15rem;
+
+}
