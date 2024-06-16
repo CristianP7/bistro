@@ -144,6 +144,7 @@
 
 .tittle--chief{
     margin: 1rem 0 2rem 0;
+    text-transform: uppercase;
 }
 
 .chief__picture{
