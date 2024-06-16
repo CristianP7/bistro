@@ -9,7 +9,7 @@
 .reservation__container{
     display: grid;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.959);
     margin: 0 auto;
     width: 300px;
     padding: 2rem 0;
@@ -36,6 +36,7 @@ textarea{
 
 .hero__links{
     margin: 20px auto 0 auto;
+    border: none;
 }
 
 @media screen and (min-width:1024px){
@@ -43,9 +44,14 @@ textarea{
         height: auto;
     }
 
-    .reservation__container{
-        width: 320px;
+    .reservation{
+        gap: .8rem;
     }
-    
+
+    .reservation__container{
+        width: 400px;
+    }
+
+
 }
 
