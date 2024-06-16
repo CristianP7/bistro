@@ -4,6 +4,10 @@
     margin-bottom: 4rem;
 }
 
+*{
+    outline: 1px solid red;
+}
+
 .container--blog{
     padding: 0 0 8rem 0;
     display: flex;
@@ -139,7 +143,7 @@
 }
 
 .chief__texts{
-    max-width: 350px;
+    width: 100%;
 }
 
 .tittle--chief{
@@ -149,7 +153,8 @@
 
 .chief__picture{
     margin-top: 2rem;
-    width: 375px;
+    width: 300px;
+
 }
 
 .chief__img{
