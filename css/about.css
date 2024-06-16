@@ -149,11 +149,15 @@
 
 .chief__picture{
     margin-top: 2rem;
-    width: 300px;
+    width: 400px;
 }
 
 .chief__img{
     width: 100%;
+    mask-image: linear-gradient(
+        rgb(255, 255, 255) 80%,
+        transparent
+    );
 }
 
 
