@@ -140,7 +140,7 @@
 }
 
 .chief__texts{
-    width: 100%;
+    max-width: 450px;
 }
 
 .tittle--chief{
