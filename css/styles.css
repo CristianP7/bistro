@@ -353,9 +353,9 @@ body{
     cursor: pointer;
     width: 100%;
     max-width: 380px;
-    height: 600px;
+    height: 450px;
     object-fit: cover;
-    aspect-ratio: 2/3;
+    aspect-ratio: 1/1;
     box-shadow: 0.0625rem 0.0625rem 0.625rem rgba(0, 0, 0, 0.329);
     border-radius: 0.25rem;
 }
@@ -408,7 +408,7 @@ body{
 
     .specialites__picture--container{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
         gap: 1rem;
     }
 
