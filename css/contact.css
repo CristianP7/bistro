@@ -108,6 +108,16 @@ textarea{
     font-size: 1.15rem;
 }
 
+.cta__phone{
+    text-decoration: none;
+    color: black;
+}
+
+.cta__phone:hover{
+    transition: .6s;
+    font-weight: 600;
+}
+
 .hero__links--margin{
     margin-bottom: 4rem;
 }
@@ -119,7 +129,10 @@ textarea{
 
 @media screen and (min-width:1024px){
     .items__contact{
-        flex-direction: row;
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
     }
 
     .grid--container{
@@ -129,6 +142,22 @@ textarea{
         margin: 4rem auto 0;
         max-width: 1000px;
     }
+
+
+    .fa-card{
+        margin-bottom: 1.25rem;
+    }
+
+    .item__card{
+        width: 90%;
+        height: 100px;
+        gap: 0rem;
+    }
+
+    .text__card{
+        margin-bottom: 1.25rem ;
+    }
+    
 
     .map__container{
         display: grid;
