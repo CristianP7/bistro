@@ -139,7 +139,7 @@
 }
 
 .chief__texts{
-    max-width: 500px;
+    max-width: 350px;
 }
 
 .tittle--chief{
@@ -149,7 +149,7 @@
 
 .chief__picture{
     margin-top: 2rem;
-    width: 400px;
+    width: 375px;
 }
 
 .chief__img{
@@ -181,7 +181,7 @@
     }
 
     .chief__picture{
-        width: 300px;
+        width: 500px;
         margin-top: 0rem;
     }
     
@@ -221,7 +221,7 @@
 }
 
 .tittle--chief{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .dishes__texts{
